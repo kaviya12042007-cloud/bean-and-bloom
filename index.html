@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bean & Bloom | Coffee Shop</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">🌿 <span>Bean & Bloom</span> 🌸</div>
+  <button id="menuBtn">☰</button>
+  <nav id="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+    <button class="cart-btn">🛒 Cart (<span id="cartCount">0</span>)</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="tag">FRESHLY BREWED, MADE WITH LOVE</p>
+    <h1>Brew Happiness, 🌿<br>Bloom Every Day.</h1>
+    <p class="sub">Discover the perfect cup of coffee and<br>make every moment special.</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn">Explore Our Menu →</a>
+      <a href="#about" class="btn btn-outline">Our Story</a>
+    </div>
+    <div class="stats">
+      <div><b>☕ 50+</b><span>Coffee Varieties</span></div>
+      <div><b>👥 10k+</b><span>Happy Customers</span></div>
+      <div><b>⭐ 4.9</b><span>Rating</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <p class="script">Good<br>Coffee<br>Good<br>Mood ♡</p>
+    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800" alt="Coffee">
+  </div>
+  <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C360,120 720,0 1080,50 C1260,75 1350,60 1440,30 L1440,100 L0,100 Z" fill="#FFF6EC"/></svg>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-left">
+    <p class="small-title">🌿 OUR STORY</p>
+    <h2>More Than Just<br>Coffee</h2>
+    <p>At Bean & Bloom, we believe every cup tells a story. We serve freshly brewed coffee with warmth, care, and a little happiness in every sip. Visit us and make your coffee moments memorable.</p>
+    <a href="#menu" class="btn small">Learn More →</a>
+  </div>
+  <div class="about-right">
+    <img class="img1" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700" alt="Cafe">
+    <img class="img2" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500" alt="Beans">
+    <p class="flower">🌸</p>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <p class="small-title center">🌿 OUR FAVOURITE BREWS 🌿</p>
+  <h2>Find Your Perfect Coffee Companion.</h2>
+  <div class="filter">
+    <button onclick="filterMenu('all',this)" class="active">All</button>
+    <button onclick="filterMenu('hot',this)">Hot</button>
+    <button onclick="filterMenu('cold',this)">Cold</button>
+  </div>
+  <div class="grid">
+    <div class="card" data-type="hot">
+      <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=500" alt="Espresso">
+      <h3>Espresso</h3><p>Rich, bold and full of flavour.</p><p class="price">₹99</p><button onclick="addToCart('Espresso')">Add to Cart</button>
+    </div>
+    <div class="card" data-type="hot">
+      <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500" alt="Cappuccino">
+      <h3>Cappuccino</h3><p>Smooth coffee topped with creamy foam.</p><p class="price">₹149</p><button onclick="addToCart('Cappuccino')">Add to Cart</button>
+    </div>
+    <div class="card" data-type="hot">
+      <img src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=500" alt="Filter">
+      <h3>Filter Coffee</h3><p>Traditional South Indian special.</p><p class="price">₹60</p><button onclick="addToCart('Filter Coffee')">Add to Cart</button>
+    </div>
+    <div class="card" data-type="cold">
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500" alt="Cold Coffee">
+      <h3>Cold Coffee</h3><p>Chilled coffee with vanilla ice cream.</p><p class="price">₹129</p><button onclick="addToCart('Cold Coffee')">Add to Cart</button>
+    </div>
+    <div class="card" data-type="cold">
+      <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=500" alt="Iced Latte">
+      <h3>Iced Latte</h3><p>Cool milk, espresso and ice.</p><p class="price">₹159</p><button onclick="addToCart('Iced Latte')">Add to Cart</button>
+    </div>
+    <div class="card" data-type="hot">
+      <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=500" alt="Mocha">
+      <h3>Mocha</h3><p>Chocolate + coffee perfect combo.</p><p class="price">₹179</p><button onclick="addToCart('Mocha')">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <p class="small-title center light">🌿 WHY BEAN & BLOOM?</p>
+  <h2 class="white">Why Choose Us?</h2>
+  <div class="why-grid">
+    <div><div class="icon">🌿</div><h4>Fresh Beans</h4><p>We use only premium Arabica beans.</p></div>
+    <div><div class="icon">♡</div><h4>Made With Love</h4><p>Every cup brewed with care.</p></div>
+    <div><div class="icon">⚡</div><h4>Fast Service</h4><p>Your coffee in 5 minutes.</p></div>
+  </div>
+  <p class="script2">Coffee<br>brings people<br>together ♡</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <p class="small-title center">🌿 LET'S CONNECT!</p>
+  <h2>Good coffee, good conversations.</h2>
+  <div class="contact-wrap">
+    <form onsubmit="sendMessage(event)">
+      <div class="row"><input type="text" id="name" placeholder="Your Name" required><input type="email" id="email" placeholder="Your Email" required></div>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="formMsg"></p>
+    </form>
+    <div class="c-info">
+      <p>📧 <b>Email</b><br>kaviya12042007@gmail.com</p>
+      <p>📞 <b>Phone</b><br>+91 98765 43210</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Bean & Bloom. Brew Happiness, Bloom Every Day.<br>Made by Kaviya | #CodvedaJourney</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
