@@ -8,7 +8,7 @@ nav a{text-decoration:none;color:#2B1A12;font-weight:500;font-size:14px}
 .cart-btn{background:#5C2E1A;color:#fff;border:none;padding:8px 16px;border-radius:20px;cursor:pointer;font-weight:600}
 #menuBtn{display:none;font-size:22px;background:none;border:none;cursor:pointer}
 
-.hero{background:linear-gradient(rgba(40,18,5,.55),rgba(40,18,5,.55)),url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1600');background-size:cover;background-position:center;color:#fff;padding:70px 6% 130px;display:flex;gap:30px;position:relative;align-items:center}
+.hero{background:linear-gradient(rgba(40,18,5,.55),rgba(40,18,5,.55)),url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800');background-size:cover;background-position:center;color:#fff;padding:70px 6% 130px;display:flex;gap:30px;position:relative;align-items:center}
 .hero-left{flex:1.2}
 .tag{letter-spacing:3px;font-size:11px;margin-bottom:14px}
 .hero h1{color:#fff;font-size:52px;line-height:1.05;margin-bottom:14px}
