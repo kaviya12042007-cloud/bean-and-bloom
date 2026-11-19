@@ -85,7 +85,19 @@ footer{background:#2E1508;color:#ddd;text-align:center;padding:22px;font-size:12
   .script2{display:none}
   .contact-wrap{flex-direction:column}
   .row{flex-direction:column}
+  .small-title {
+  color: #6b3a00 !important
+
   nav{display:none;flex-direction:column;position:absolute;top:60px;left:0;width:100%;background:#fff;padding:20px}
   nav.active{display:flex}
   #menuBtn{display:block}
+}
+.small-title {
+  color: #6b3a00 !important;
+}
+.about p, .card p {
+  color: #333333 !important;
+}
+.card {
+  color: #222222 !important;
 }
